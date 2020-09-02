@@ -1,0 +1,14 @@
+[user]
+    email = 70407460+coppercitylabs@users.noreply.github.com
+	name = Copper City Labs
+[color]
+	ui = auto
+[diff]
+	submodule = log
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[pull]
+	rebase = true

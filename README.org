@@ -1,0 +1,16 @@
+* Uzbek Tokenizers
+  tokenizer models for the Uzbek language
+
+** Requirements
+   #+begin_src shell
+   pip install -r requirements.txt
+   #+end_src
+
+** Sentence tokenizer
+   Trained using the [[http://nltk.org/][NLTK]] Punkt tokenizer.
+
+   Example usage:
+
+   #+begin_src shell
+   python scripts/sentence-tokenize.py
+   #+end_src
