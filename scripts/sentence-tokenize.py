@@ -38,4 +38,4 @@ TEXT = """Ўзбекистон Республикаси Конституцияс
 
 tokenizer = nltk.data.load(
     os.path.join(SCRIPT_DIR, '../models/sentence-tokenizer-v1.pickle'))
-print('\n'.join(tokenizer.tokenize(text)))
+print('\n\n'.join([' '.join(x.split()) for x in tokenizer.tokenize(TEXT)]))
